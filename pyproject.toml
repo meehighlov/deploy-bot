@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "deploy-bot"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-telegram-bot = "^21.1.1"
+pydantic = "^2.7.1"
+python-dotenv = "^1.0.1"
+jinja2 = "^3.1.4"
+aiofiles = "^23.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

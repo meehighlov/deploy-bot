@@ -1,0 +1,12 @@
+[Unit]
+Description={{ description }}
+
+[Service]
+ExecStart={{ exec_start }}
+Restart=on-failure
+{% for env_var in env_vars %}
+Evironment={{ env_var }}
+{% endfor %}
+
+[Install]
+WantedBy=multi-user.target
